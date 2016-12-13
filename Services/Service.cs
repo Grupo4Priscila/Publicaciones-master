@@ -93,8 +93,10 @@ namespace Publicaciones.Service {
     ///AQUIIIIIIIIIIIIIII HACERRRR ALGOO
     ///
     ///
-    /////
-    ////
+    ///
+    ///
+    ///
+    ///
          public List<Publicacion> Publicaciones(string rut){
              return null;
          //    return BackendContext.Publicacion

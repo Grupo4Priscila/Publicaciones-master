@@ -9,6 +9,7 @@ namespace Publicaciones.Models
         public string PaginaFinal { get; set; }
         public string ContifadRechazos { get; set; }
 
+        public string NumeroDePagina{get; set;}
     }
 
 }
