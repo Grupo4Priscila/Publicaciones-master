@@ -17,6 +17,7 @@ namespace Publicaciones.Service {
 
         List <Persona> Personas();
 
+        void AddPublicaciones(Publicacion publicacion);
         List <Publicacion> Publicaciones(string rut);
 
         void Initialize(); 
@@ -25,9 +26,6 @@ namespace Publicaciones.Service {
     /// <summary>
     /// Implementacion de la interface IMainService
     /// </summary>
-
-
-
 
 
     public class MainService:IMainService {
@@ -78,6 +76,13 @@ namespace Publicaciones.Service {
 
             // Guardo los cambios
             BackendContext.SaveChanges(); 
+        }
+        public void AddPublicaciones(Publicacion publicacion){
+            // Guardo la Publicacion en el Backend
+            BackendContext.Publicacion.Add(publicacion); 
+
+            // Guardo los cambios
+            BackendContext.SaveChanges();
         }
 
         public List < Persona > FindPersonas(string nombre) {
